@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" lang="en-US">
+  <!meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Home page</title>
+  <style>
+  header {
+    width :100%;
+    height:50px;
+    border-style:solid;
+    border-size:1px;
+    border-color:red;
+    box-sizing:border-box;
+    padding :5px;
+  }
+  body{
+    padding:0;
+    margin:0;
+  }
+ 
+  #brand{
+    padding:0;
+    margin:0;
+    float : left;
+    margin-left:24px;
+  }
+  #tag_line{
+    float :right;
+    padding-right:10px;
+  }
+  nav{
+    width :100%;
+    height:100px;
+    background-color:orange;
+    box-sizing:border-box;
+    float:left;
+    padding:30px;
+  }
+  #search{
+    width :400px;
+    height:40px;
+    float:left;
+    background-color:white;
+    border-sizing:border-box;
+   border:none;
+    font-size:15px;
+    padding:10px;
+   
+  }
+  #submit{
+    width :100px;
+    height:40px;
+    float:left;
+    border-sizing:border-box;
+    border:none;
+    margin-left:3px;
+    font-size:15px;
+  }
+  
+  #menu-table{
+    width :400px;
+    height:40px;
+    float:right;
+    border-sizing:border-box;
+   
+  }
+    #menu_item{
+      
+ 
+      background-color:white;
+      width:18%;
+      text-align:center;
+      
+    }
+  a{
+    text-decoration:none;
+    color:black;
+    font-family:century;
+  }
+  section
+  {
+    width :96%;
+    height:2750px;
+    float:left;
+border-sizing:border-box;
+    border-width:1px;
+    border-style:solid;
+    border-color:#ccc;
+    padding:30px;
+  }
+  #Venue
+  {
+    float:left;
+  }
+  #phone
+  {
+    float:right;
+  }
+  #popular-sweet-box
+  {
+    width :580px;
+    height:480px;
+    float:left;
+    border-sizing:border-box;
+    background-color:black;
+    margin-top:30px;
+    padding:25px;
+  }
+  #Our-popular-sweet-title
+  {
+    color:white;
+    text-align:center;
+    font-size:30px;
+    margin:0px;
+    padding:0px;
+  }
+  #popular-sweet-img
+  {
+    width:240px;
+    height:170px;
+    padding:15px;
+    border-width:5px;
+    border-style:solid;
+    border-color:white;
+    border-sizing:border-box;
+   
+  }
+    #rate-list-box
+  {
+    width:300px;
+    height:526px;
+    float:right;
+    border-sizing:border-box;
+    margin-top:30px;
+  }
+    #rate-header
+  {
+      height:50px;
+      border-sizing:border-box;
+      background-color:black;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+      font-size:18px;
+    }
+  #sweet-price{
+      height:50px;
+    border-sizing:border-box;
+    background-color:black;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+    }
+    #rate-content{
+    background-color:orange;
+    }
+  #s-name
+  {
+    color:white;
+   text-size:15px;
+    font-family:century gothic;
+    padding:13px;
+    border-bottom-width:2px;
+    border-bottom-style:solid;
+    border-bottom-color:white;
+  }
+  #ol-style
+  {
+    list-style:none;
+  }
+  fieldset{
+    width:600px;
+    height:490px;
+    margin-top:50px;
+    border-bottom-color:#ccc;
+    float:left;
+  }
+  legend{
+    font-size:25px;
+    font-weight:bold;
+  }
+  #order-online
+  {
+    font-size:15px;
+  }
+  #order-input
+  {
+    width:100%;
+    height:25px;
+    border-bottom-color:#ccc;
+    border-size:1px;
+    border-style:solid;
+  }
+  textarea
+  {
+    width:100%;
+    height:100px;
+    border-sizing:border-box;
+  }
+  #submit-bt
+  {
+    padding:10px;
+    font-size:15px;
+    float:right;
+    border-bottom-color:#ccc;
+    border-size:1px;
+    border-style:solid;
+    background-color:white;
+   
+  }
+  #about-us
+  {
+    width:250px;
+    height:450px;
+    float:right;
+    border-size:1px;
+    border-style:solid;
+    border-color:#ccc;
+    background-color:white;
+    margin-top:60px;
+   padding:20px;
+   
+  }
+  #About-Us
+  {
+    text-align:center;
+    
+  }
+  #abt-text
+  {
+    text-align:justify;
+  }
+    #more-sweets
+  {
+    width:100%;
+    border-sizing:border-box;
+    float:left;
+    text-align:center;
+  }
+    
+  
+  #m-sweet-img
+  {
+    width:125px;
+    height:150px;
+    float:right;
+    padding:15px;
+    border-width:5px;
+    border-style:solid;
+    border-color:#ccc;
+    border-sizing:border-box;
+    margin-top:20px;
+    margin-left:22px;
+  }
+  #m-sweet-img1
+  {
+    width:125px;
+    height:150px;
+    float:right;
+    padding:15px;
+    border-width:5px;
+    border-style:solid;
+    border-color:#ccc;
+    border-sizing:border-box;
+    margin-top:25px;
+    margin-left:27px;
+  }
+  #buy-bt-div
+  {
+    width:125px;
+    height:30px;
+    float:left;
+    padding:15px;
+    border-width:5px;
+    border-style:solid;
+    border-color:#ccc;
+    border-sizing:border-box;
+    margin-top:20px;
+    margin-left:22px;
+    
+    
+  }
+  #buy-bt-m
+  {
+    width :100px;
+    height:40px;
+    float:left;
+    border-sizing:border-box;
+    border:1;
+    margin-left:3px;
+    font-size:15px;
+    text-align:center;
+    background-color:white;
+  }
+  footer
+  {
+    width:102%;
+    height:250px;
+    float:left;
+    border-sizing:border-box;
+    color:white;
+    background-color:black;
+  }
+    #contact_us
+  {
+    width:350px;
+    height:250px;
+    border-sizing:border-box;
+    float:left;
+    border-width:1px;
+    border-style:solid;
+    border-color:red;
+  }
+  #Follow
+  {
+    width:350px;
+    height:249px;
+    border-sizing:border-box;
+    float:right;
+    border-width:1px;
+    border-style:solid;
+    border-color:red;
+    padding-left:20px;
+  }
+  #contact-detail
+  {
+    padding-left:20px;
+    padding:10px;
+  }
+  #contact-title
+  {
+    padding:10px;
+  }
+  
+    #devloper
+  {
+    margin-top:180px;
+    margin-left:100px;
+    padding:10px;
+    font-size:15px;
+    font-weight:bold;
+  }
+    #social-img
+  {
+    padding-left:40px;
+  }
+  #follow-us-text
+  {
+    padding-left:20px;
+    margin-top:30px;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id ="brand">Sweetshⓞp.com</h1>
+    <p id ="tag_line">The world largest sweets & Bakerry shop</p>
+  </header>
+  <nav>
+    <form>
+      <input id="search" type="search" name="search" placeholder="search your sweet here"/>
+      <input type="submit" id ="submit" value="Search" />
+    </form>
+    <table id="menu-table">
+      <tr id="tr-menu">
+        <td id="menu_item"><a href="index.html">Home</a></td>
+        <td id="menu_item"><a href="#more-sweets">Sweets</a></td>
+        <td id="menu_item"><a href="#">Bakerries</a></td>
+        <td id="menu_item" ><a href="#about-us">About us</a></td>
+        <td id="menu_item"><a href="#contact-title">Contact us</a></td>
+      </tr>
+    </table>
+  </nav>
+  <section>
+    <address id="Venue">
+      Venue : Mamdapur teosa near gov hospital-444903
+      
+    </address>
+    <address id="phone">
+      Order online : +91 9322560095
+    </address>
+    <div id="popular-sweet-box">
+      <h1 id="Our-popular-sweet-title">Our popular sweets</h1>
+      
+      <a href="#order-input" ><img src="/storage/emulated/0/bluetooth/images(8).jpeg" alt="a" id="popular-sweet-img"/></a>
+     <a href="#order-input" > <img src="/storage/emulated/0/bluetooth/images(5).jpeg" alt="b" id="popular-sweet-img"/></a>
+     
+    <a href="#order-input" >  <img src="/storage/emulated/0/bluetooth/images(32).jpeg" alt="c" id="popular-sweet-img"/></a>
+<a href="#order-input" ><img src="/storage/emulated/0/bluetooth/images(6).jpeg" alt="d" id="popular-sweet-img"/></a>
+    </div>
+      <table id="rate-list-box">
+        <tr >
+          <td id="rate-header">Service Name</td>
+          <td id="sweet-price">Price</td>
+        </tr>
+        <tr>
+        <td id="rate-content">
+           <ol>
+              <li id="s-name">Rasgulla</li>
+              <li id="s-name">Laddu</li>
+              <li id="s-name">Peda</li>
+              <li id="s-name">Jalebi</li>
+              <li id="s-name">cham cham</li>
+              <li id="s-name">gullab jamun</li>
+              <li id="s-name">Mysore Pak</li>
+              <li id="s-name">ice cream</li>
+              <li id="s-name">Ras malai</li>
+            </ol>
+        </td>
+          <td id="rate-content">
+            <ol id="ol-style">
+              <li id="s-name">200/kg</li>
+              <li id="s-name">120/kg</li>
+              <li id="s-name">300/kg</li>
+              <li id="s-name">180/kg</li>
+              <li id="s-name">270/kg</li>
+              <li id="s-name">210/kg</li>
+              <li id="s-name">400/kg</li>
+              <li id="s-name">500/kg</li>
+              <li id="s-name">600/kg</li>
+            </ol>
+          </td>
+        </tr>
+        
+      </table>
+    <fieldset id="form">
+      <legend>ᴏʀᴅᴇʀ ᴏɴʟɪɴᴇ</legend>
+      
+      <form id="order-online">
+        <br>
+        Buyer Name :<br>
+        <input type="text" name="name" id="order-input" required/><br><br>
+        Mobile :<br>
+         <input type="tel" name="mobile number" id="order-input" required /><br><br>
+        Choose Sweets<br>
+        <select type="Choose Sweets" id="order-input">
+          <option value="Rashgulla">Rashgulla</option>
+          <option value="Gulab Jamun">Gulab Jamun</option>
+          <option value="Jalebi">Jalebi</option>
+          <option value="Cham Cham">Cham Cham</option>
+          <option value="Peda">Peda</option>
+          <option value="Mysore Pak">Mysore Pak</option>
+          <option value="Ice Cream">Ice Cream</option>
+          <option value="Rasmalai">Rasmalai</option>
+          <option value="Laddu">Laddu</option>
+          <br><br>
+        </select>
+        <br><br>
+        Quantity : <br>
+        <input type="text" name="Quantity" id="order-input" required />
+        <br><br>
+        Address:<br>
+        <textarea name="Address" required></textarea>
+        <br><br>
+        Payment
+        <select>
+          <option value ="Cod">COD</option>
+        </select>
+          
+       
+        <input type="submit" value="Order Now !" id="submit-bt" />
+      </form>
+     
+    </fieldset>
+     <div id="about-us">
+       <h1 id="About-Us">About Us</h1>
+       <hr>
+       <p id ="abt-text">
+         This shop is started by Mr.Yash Lawankar
+         in 2020. And our shop is now leading shop from out city
+         and there are 50 outlets opened by us in our country . and we are happy to serve sweet to india .
+         and our motive is to become a world best sweet seller.
+         <br><br><br><br>
+         <hr>
+         <marquee behavior="alternate" bgcolor="pink">* New Offers *</marquee>
+         <hr>
+         <center> <u><b>For today there is no offer</b></u></center>
+       </p>
+      </div>
+    <h1 id="more-sweets">Our Sweets </h1>
+ 
+    <img src="/storage/emulated/0/bluetooth/images(13).jpeg" id ="m-sweet-img1">
+    <img src="/storage/emulated/0/bluetooth/images(12).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(11).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(10).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(9).jpeg" id ="m-sweet-img">
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+     <img src="/storage/emulated/0/bluetooth/images(14).jpeg" id ="m-sweet-img1">
+    <img src="/storage/emulated/0/bluetooth/images(15).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(16).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(17).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(18).jpeg" id ="m-sweet-img">
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+     <img src="/storage/emulated/0/bluetooth/images(19).jpeg" id ="m-sweet-img1">
+    <img src="/storage/emulated/0/bluetooth/images(20).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(21).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(22).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(23).jpeg" id ="m-sweet-img">
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+     <img src="/storage/emulated/0/bluetooth/images(24).jpeg" id ="m-sweet-img1">
+    <img src="/storage/emulated/0/bluetooth/images(25).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(26).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(27).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(28).jpeg" id ="m-sweet-img">
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+     <img src="/storage/emulated/0/bluetooth/images(29).jpeg" id ="m-sweet-img1">
+    <img src="/storage/emulated/0/bluetooth/images(30).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(31).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(32).jpeg" id ="m-sweet-img">
+    <img src="/storage/emulated/0/bluetooth/images(33).jpeg" id ="m-sweet-img">
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+    <div id="buy-bt-div"><center><a href="#order-input"><button id="buy-bt-m">Buy now</button></a></center></div>
+  </section>
+  <footer>
+    <div id="contact_us">
+      <h1 id="contact-title">Contact us :</h1>
+      <address id="contact-detail"> website :Sweetshop.com</address>
+      <address id="contact-detail"> Phone no: +91 9322560095</address>
+       <address id="contact-detail"> Email : sweetshop@gmail.com</address>
+     <address id="contact-detail"> Address : Mamdapur teosa near gov. hospital</address>
+     
+    </div>
+    <div id="Follow">
+       <h1 id="follow-us-text">Follow us :</h1>
+      <img src="/storage/emulated/0/bluetooth/IMG_20240217_152710.jpg" id="social-img">
+    </div>
+    <div id ="devloper">
+      <pre> Devloped by: Yash Lawankar</pre>
+      </div>
+    
+    
+    
+  </footer>
+  
+</body>
+</html>
